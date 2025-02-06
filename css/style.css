@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,32 +18,78 @@ body {
     overflow: hidden;
     flex-direction: column;
 }
-#main{
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right:10px;
-    padding-top:200px;
-    margin:12px
+
+#main {
+    padding: 200px 10px 10px 20px;
+    margin: 12px;
+}
+
+button {
+    padding: 20px 50px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(231, 186, 231);
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 5px 10px #eeb2f0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c4bcbc; /* Цвет кнопки при наведении */
+}
+
+h1 {
+    margin: 0;
+    color: white; /* Цвет текста */
+    font-style: italic; /* Курсив */
+}
+
+/* Адаптивность для экранов до 1024px */
+@media (max-width: 1024px) {
+    #main {
+        padding-top: 150px;
     }
-    button{
-        padding: 20px 50px;
-        outline: none;
-        border: none;
-        border-radius: 25px;
-        background-color: rgb(231, 186, 231);
-        font-weight: 600;
-        letter-spacing: 1px;
-        box-shadow: 0px 5px 10px #eeb2f0;
-        cursor: pointer;
-        font-size: 16px;
-        margin-top: 20px;
-        
-    }
-    button:hover {
-        background-color: #c4bcbc; /* Цвет кнопки при наведении */
+    button {
+        padding: 15px 40px;
+        font-size: 14px;
     }
     h1 {
-        margin: 0;
-        color: white; /* Цвет текста */
-        font-style: italic; /* Курсив */
+        font-size: 24px;
     }
+}
+
+/* Адаптивность для экранов до 768px */
+@media (max-width: 768px) {
+    #main {
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    button {
+        padding: 12px 30px;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+/* Адаптивность для экранов до 480px */
+@media (max-width: 480px) {
+    #main {
+        padding-top: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+}
