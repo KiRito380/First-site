@@ -593,3 +593,86 @@ body {
 .bear.show {
     right: 1060px;
 }
+@media screen and (max-width: 768px) {
+  .container {
+      transform: scale(0.8);
+  }
+  
+  .container .rose-petals > div {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .container .rose-leaves > div:nth-child(1) {
+      height: 180px;
+      left: 30px;
+  }
+  
+  .container .rose-leaves > div:nth-last-child(1) {
+      width: 45px;
+      height: 25px;
+      top: 50px;
+      left: 10px;
+  }
+  
+  .container .thorns > div {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .container .sparkles > div {
+      width: 3px;
+      height: 3px;
+  }
+  
+  .popup {
+      font-size: 36px;
+  }
+  
+  .bear {
+      width: 300px;
+      right: -400px;
+  }
+  
+  .bear.show {
+      right: 50%;
+      transform: translateX(50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      transform: scale(0.6);
+  }
+  
+  .container .rose-petals > div {
+      width: 40px;
+      height: 40px;
+  }
+  
+  .container .rose-leaves > div:nth-child(1) {
+      height: 140px;
+      left: 25px;
+  }
+  
+  .container .rose-leaves > div:nth-last-child(1) {
+      width: 35px;
+      height: 20px;
+      top: 40px;
+      left: 5px;
+  }
+  
+  .popup {
+      font-size: 24px;
+  }
+  
+  .bear {
+      width: 250px;
+      right: -350px;
+  }
+  
+  .bear.show {
+      right: 50%;
+      transform: translateX(50%);
+  }
+}
