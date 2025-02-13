@@ -621,10 +621,10 @@ body {
 }
 
 /* Адаптація для менших екранів */
-@media (max-width: 1024px) {
+@media @media (max-width: 1080px) and (max-height: 2400px) {
   .bear {
-      top: 58vh;
-      width: 12vw;
+      top: 68vh;
+      width: 16vw;
   }
 }
 
