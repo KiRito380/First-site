@@ -557,15 +557,36 @@ body {
   }
 }
 .popup {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #e91e63;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    display: none;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e91e63;
+  font-size: 3.5vw; /* Адаптивний розмір шрифту */
+  font-weight: bold;
+  text-align: center;
+  display: none;
+  padding: 2vw;
+  border-radius: 10px;
+  max-width: 60%;
+  line-height: 1.2;
+}
+
+/* Медіа-запити для кращого вигляду на малих екранах */
+@media (max-width: 768px) {
+  .popup {
+      font-size: 5vw; /* Збільшуємо шрифт на менших екранах */
+      padding: 3vw;
+      max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup {
+      font-size: 6vw; /* Ще більше збільшуємо для мобільних */
+      padding: 4vw;
+      max-width: 90%;
+  }
 }
 .confetti {
     position: fixed;
@@ -583,13 +604,40 @@ body {
     }
 }
 .bear {
-    position: fixed;
-    right: -500px;
-    bottom: 900px;
-    width: 450px;
-    height: auto;
-    transition: right 2s ease-in-out;
+  position: fixed;
+  left: 50%; /* Центруємо ведмедя по горизонталі */
+  top: 25vh; /* Розміщуємо під текстом і над трояндою */
+  transform: translateX(-50%); /* Щоб ведмідь залишався по центру */
+  width: 10vw; /* Адаптивний розмір */
+  max-width: 200px;
+  height: auto;
+  transition: opacity 2s ease-in-out;
+  opacity: 0; /* Початково прихований */
 }
+
+/* Коли ведмідь з’являється */
 .bear.show {
-    right: 1060px;
+  opacity: 1;
+}
+
+/* Адаптація для менших екранів */
+@media (max-width: 1024px) {
+  .bear {
+      top: 50vh;
+      width: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .bear {
+      top: 60vh;
+      width: 15vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .bear {
+      top: 63vh;
+      width: 18vw;
+  }
 }
