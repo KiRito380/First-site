@@ -625,6 +625,7 @@ body {
   .bear {
       top: 68vh;
       width: 22vw;
+      height: auto;
   }
 }
 
