@@ -609,7 +609,7 @@ body {
   top: 10vh; /* Розміщуємо під текстом і над трояндою */
   transform: translateX(-50%); /* Щоб ведмідь залишався по центру */
   width: 10vw; /* Адаптивний розмір */
-  max-width: 200px;
+  max-width: 350px;
   height: auto;
   transition: opacity 2s ease-in-out;
   opacity: 0; /* Початково прихований */
