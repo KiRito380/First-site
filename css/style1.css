@@ -608,7 +608,7 @@ body {
   left: 50%; /* Центруємо ведмедя по горизонталі */
   top: 10vh; /* Розміщуємо під текстом і над трояндою */
   transform: translateX(-50%); /* Щоб ведмідь залишався по центру */
-  width: 10vw; /* Адаптивний розмір */
+  width: 16vw; /* Адаптивний розмір */
   max-width: 350px;
   height: auto;
   transition: opacity 2s ease-in-out;
