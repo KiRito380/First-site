@@ -621,12 +621,16 @@ body {
 }
 
 /* Адаптація для менших екранів */
-@media @media (max-width: 1080px) and (max-height: 2400px) {
-  .bear {
-      top: 68vh;
-      width: 22vw;
-      height: auto;
-  }
+@media (max-width: 1080px) and (max-height: 2400px) {
+    .bear {
+        position: absolute;
+        top: 55vh; /* Опускаємо трохи вниз */
+        left: 50%;
+        transform: translateX(-50%); /* Центруємо */
+        width: 30vw; /* Робимо ведмедя ще більшим */
+        max-width: 300px; /* Обмежуємо максимальний розмір */
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
