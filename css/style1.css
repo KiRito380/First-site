@@ -630,14 +630,14 @@ body {
 
 @media (max-width: 768px) {
   .bear {
-      top: 15vh;
+      top: 5vh;
       width: 15vw;
   }
 }
 
 @media (max-width: 480px) {
   .bear {
-      top: 43vh;
+      top: 23vh;
       width: 18vw;
   }
 }
