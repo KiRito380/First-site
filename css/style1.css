@@ -623,21 +623,21 @@ body {
 /* Адаптація для менших екранів */
 @media (max-width: 1024px) {
   .bear {
-      top: 50vh;
+      top: 58vh;
       width: 12vw;
   }
 }
 
 @media (max-width: 768px) {
   .bear {
-      top: 5vh;
+      top: 65vh;
       width: 15vw;
   }
 }
 
 @media (max-width: 480px) {
   .bear {
-      top: 23vh;
+      top: 70vh;
       width: 18vw;
   }
 }
